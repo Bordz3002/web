@@ -1,0 +1,89 @@
+body{
+    background-color:#545454;
+    display:flex;
+    margin:0;
+    height:100vh;
+    justify-content: center;
+    align-items:center
+}
+ul{
+    background-color:#8F8E8E;
+    border-color:none;
+    border-radius:20px;
+    box-shadow:-2px -2px 5px #FCFBFB, 10px 10px 20px #020202;
+    display:flex;
+    overflow:visible;
+}
+ul:hover li{
+    cursor:pointer;
+    filter:blur(3px);
+}
+ul li:hover{
+    filter:blur(0)  drop-shadow(5px 5px 15px #EEA12E);
+    transform:scale(1.9);
+    transition:transform 0.6s ease-in-out;
+}
+li{
+    list-style-type:none;
+    margin-right:40px;
+    transition:transform 0.5s ease;
+}
+form{
+    display:flex;
+    position:absolute;
+    margin-top:36vh;
+}
+label{
+    margin:0;
+}
+.label_img{
+    transition:transform 0.6s ease;
+}
+.label_img:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+    filter:drop-shadow(3px 3px 6px #EEA12E);
+    transition:transform 0.6s ease;
+}
+fieldset{
+    display:block;
+    position:relative;
+    width:300px;
+    max-width:100%;
+    background-color:#8F8E8E;
+    border-color:none;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:-1px -1px 4px #FCFBF9, 10px 10px 20px #070707;
+}
+input{
+    width:250px;
+    background-color:#545454;
+    border-color:transparent;
+    border-radius:20px;
+    margin-left:2px;
+    height:24px;
+    box-shadow:inset -1px -1px 2px #FCFBF9, inset 2px 2px 4px #070707;
+}
+button{
+    display:block;
+    position:absolute;
+    margin-top:160px;
+    margin-left:140px;
+    background-color:#8F8E8E;
+    border-color:transparent;
+    border-radius:10px;
+    box-shadow:-2px -2px 4px #FCFBF9, 10px 10px 20px #070707;
+    transition:transform 0.5s ease;
+}
+button:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+    transition:transform 0.5s ease;
+}
+button:hover .login_button{
+    filter:drop-shadow(10px 10px 20px #EEA12E);
+}
+button .login_button{
+    transition:filter 0.5s ease;
+}
